@@ -2,11 +2,15 @@
 
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './../App.css';
+import NavBar from './NavBar';
 
 function ExperiencePage() {
     return (
-        <p className='font'>Experience</p>
+        <div>
+            <NavBar />
+            <p className='font'>Experience</p>
+        </div>
     )
 }
 
