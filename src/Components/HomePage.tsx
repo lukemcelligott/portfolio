@@ -9,7 +9,10 @@ function HomePage() {
     return (
         <div>
             <NavBar />
-            <p className='font'>hello</p>
+            <div className='container'>
+                <p className='font'>Hello, my name is</p>
+                <h2 className='font'>Luke McElligott</h2>
+            </div>
         </div>
     )
 }

@@ -32,7 +32,13 @@
   background-color: var(--black);
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .font {
+  color: #EEEEEE;
   font-family: 'JetBrains Mono', monospace;
 }
 
