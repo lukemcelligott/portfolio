@@ -28,6 +28,19 @@
   color: #61dafb;
 }
 
+.app-bar-center {
+  margin: auto;
+  
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.app-bar-btn {
+  /* width: 300%; */
+}
+
 .background {
   background-color: var(--black);
 }
@@ -40,6 +53,12 @@
 .font {
   color: #EEEEEE;
   font-family: 'JetBrains Mono', monospace;
+}
+
+.MuiAppBar-root {
+  background-color: transparent !important;
+  outline: 0;
+  border: 'none';
 }
 
 /* color palette */

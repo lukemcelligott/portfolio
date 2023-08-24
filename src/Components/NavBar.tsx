@@ -46,62 +46,57 @@ const header = createTheme({
 function NavBar() {
     return (
         <div>
-            <AppBar position="static">
+            <AppBar elevation={0} position="static">
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <ThemeProvider theme={theme}>
                             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                                {/* {pages.map((page) => ( */}
-                                {/* <Button
-                                    key={page}
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
-                                >
-                                    <Typography variant="body1">
-                                        {page}
-                                    </Typography>
-                                </Button> */}
-                                {/* ))} */}
-
-                                <Link to="/home">
-                                <Button
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
-                                >
-                                    <Typography variant="body1">
-                                        Home
-                                    </Typography>
-                                </Button>
-                                </Link>
-
-                                <Link to="/projects">
-                                <Button
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
-                                >
-                                    <Typography variant="body1">
-                                        Projects
-                                    </Typography>
-                                </Button>
-                                </Link>
-
-                                <Link to="/experience">
-                                    <Button
-                                        sx={{ my: 2, color: 'white', display: 'block' }}
-                                    >
-                                        <Typography variant="body1">
-                                            Experience
-                                        </Typography>
-                                    </Button>
-                                </Link>
-
-                                <Link to="/contact">
-                                <Button
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
-                                >
-                                    <Typography variant="body1">
-                                        Contact
-                                    </Typography>
-                                </Button>
-                                </Link>
-
+                                <div className='app-bar-center'>
+                                    <span className='app-bar-btn'>                              
+                                        <Link to="/home">
+                                        <Button
+                                            sx={{ my: 2, color: 'white', display: 'block' }}
+                                        >
+                                            <Typography variant="body1">
+                                                Home
+                                            </Typography>
+                                        </Button>
+                                        </Link>
+                                    </span>
+                                    <span className='app-bar-btn'>
+                                        <Link to="/projects">
+                                        <Button
+                                            sx={{ my: 2, color: 'white', display: 'block' }}
+                                        >
+                                            <Typography variant="body1">
+                                                Projects
+                                            </Typography>
+                                        </Button>
+                                        </Link>
+                                    </span>
+                                    <span className='app-bar-btn'>
+                                        <Link to="/experience">
+                                            <Button
+                                                sx={{ my: 2, color: 'white', display: 'block' }}
+                                            >
+                                                <Typography variant="body1">
+                                                    Experience
+                                                </Typography>
+                                            </Button>
+                                        </Link>
+                                    </span>
+                                        <span className='app-bar-btn'>
+                                        <Link to="/contact">
+                                        <Button
+                                            sx={{ my: 2, color: 'white', display: 'block' }}
+                                        >
+                                            <Typography variant="body1">
+                                                Contact
+                                            </Typography>
+                                        </Button>
+                                        </Link>
+                                    </span>
+                                </div>
                             </Box>
                         </ThemeProvider>
                     </Toolbar>
