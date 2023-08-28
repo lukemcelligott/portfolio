@@ -46,6 +46,8 @@
 }
 
 .container {
+  padding: 15% 0;
+  text-align: center;
   display: flex;
   justify-content: center;
 }
