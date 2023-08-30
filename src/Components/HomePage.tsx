@@ -10,8 +10,9 @@ function HomePage() {
         <div>
             <NavBar />
             <div className='container'>
-                <p className='font'>Hello, my name is</p>
-                <h2 className='font'>Luke McElligott</h2>
+                <p className='text-font'>Hello, my name is</p>
+                
+                <h2 className='header-font'>Luke McElligott</h2>
             </div>
         </div>
     )

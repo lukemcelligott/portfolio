@@ -48,13 +48,21 @@
 .container {
   padding: 15% 0;
   text-align: center;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
+  flex-direction: column;
 }
 
-.font {
+.text-font {
   color: #EEEEEE;
   font-family: 'JetBrains Mono', monospace;
+  font-size: x-large;
+}
+
+.header-font {
+  color: #EEEEEE;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: xx-large;
 }
 
 .MuiAppBar-root {
