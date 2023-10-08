@@ -11,14 +11,9 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
-//import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
-//import AdbIcon from '@mui/icons-material/Adb';
 
 const pages = ['Home', 'Projects', 'Experience', 'Contact']
 
@@ -26,7 +21,8 @@ const theme = createTheme({
     typography: {
         fontFamily: 'JetBrains Mono',
         body1: {
-            color: '#EEEEEE'
+            color: '#EEEEEE',
+            fontSize: 22
           },
         
     },
@@ -35,7 +31,8 @@ const theme = createTheme({
 const header = createTheme({
   typography: {
     body1: {
-      color: '#EEEEEE'
+      color: '#EEEEEE',
+      fontSize: 32
     },
     h1: {
       color: theme.palette.secondary.main
@@ -54,9 +51,7 @@ function NavBar() {
                                 <div className='app-bar-center'>
                                     <span className='app-bar-btn'>                              
                                         <Link to="/home">
-                                        <Button
-                                            sx={{ my: 2, color: 'white', display: 'block' }}
-                                        >
+                                        <Button sx={{ my: 2, color: 'white', display: 'block' }}>
                                             <Typography variant="body1">
                                                 Home
                                             </Typography>
@@ -65,9 +60,7 @@ function NavBar() {
                                     </span>
                                     <span className='app-bar-btn'>
                                         <Link to="/projects">
-                                        <Button
-                                            sx={{ my: 2, color: 'white', display: 'block' }}
-                                        >
+                                        <Button sx={{ my: 2, color: 'white', display: 'block' }}>
                                             <Typography variant="body1">
                                                 Projects
                                             </Typography>
@@ -76,9 +69,7 @@ function NavBar() {
                                     </span>
                                     <span className='app-bar-btn'>
                                         <Link to="/experience">
-                                            <Button
-                                                sx={{ my: 2, color: 'white', display: 'block' }}
-                                            >
+                                            <Button sx={{ my: 2, color: 'white', display: 'block' }}>
                                                 <Typography variant="body1">
                                                     Experience
                                                 </Typography>
@@ -87,9 +78,7 @@ function NavBar() {
                                     </span>
                                         <span className='app-bar-btn'>
                                         <Link to="/contact">
-                                        <Button
-                                            sx={{ my: 2, color: 'white', display: 'block' }}
-                                        >
+                                        <Button sx={{ my: 2, color: 'white', display: 'block' }}>
                                             <Typography variant="body1">
                                                 Contact
                                             </Typography>

@@ -1,0 +1,19 @@
+.card {
+    background-color: #393E46!important;
+    height: 100%;
+    /*width: 30%;*/
+}
+
+.github {
+    margin-left: 90%;
+    color: white;
+}
+
+.grid {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.skills {
+    color: #4ECCA3;
+}
