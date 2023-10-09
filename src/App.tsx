@@ -1,17 +1,29 @@
 import React from 'react';
 import logo from './logo.svg';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import './App.css';
-import HomePage from './HomePage';
+import HomePage from './Components/HomePage';
+import ProjectsPage from './Components/ProjectsPage';
+import ExperiencePage from './Components/ExperiencePage';
+import ContactPage from './Components/ContactPage';
 
 function App() {
-  const appStyle = {
-    backgroundColor: '#232931', // Replace "lightblue" with your desired background color
-  };
 
   return (
-    <div className="background" style={appStyle}>
-      <HomePage />
-    </div>
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/home" element={<HomePage />} />
+          <Route path="projects" element={<ProjectsPage />} />
+          <Route path="experience" element={<ExperiencePage />} />
+          <Route path="contact" element={<ContactPage />} />
+          
+          <Route path='/' element={<HomePage />} />
+          <Route path="*" element={<HomePage />} />
+        </Routes>
+      </BrowserRouter>
+
   );
 }
 

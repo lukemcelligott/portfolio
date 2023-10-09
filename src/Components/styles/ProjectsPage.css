@@ -1,0 +1,23 @@
+.card {
+    background-color: #393E46!important;
+    height: 100%;
+    /*width: 30%;*/
+}
+
+.github {
+    margin-left: 90%;
+    color: #EEEEEE;
+}
+
+.grid {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.p-height {
+    min-height: 200px;
+}
+
+.skills {
+    color: #4ECCA3;
+}

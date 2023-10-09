@@ -1,3 +1,7 @@
+html {
+  scrollbar-gutter: stable;
+}
+
 .App {
   text-align: center;
 }
@@ -28,12 +32,44 @@
   color: #61dafb;
 }
 
+.app-bar-center {
+  margin: auto;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.app-bar-btn {
+  /* width: 300%; */
+  justify-content: center;
+}
+
 .background {
   background-color: var(--black);
 }
 
+.button {
+  text-decoration: none;
+}
+
+.container {
+  padding: 15% 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .font {
+  color: #EEEEEE;
   font-family: 'JetBrains Mono', monospace;
+}
+
+.MuiAppBar-root {
+  background-color: transparent !important;
+  outline: 0;
+  border: 'none';
 }
 
 /* color palette */
