@@ -13,6 +13,7 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
 import { Link } from 'react-router-dom';
 
 const pages = ['Home', 'Projects', 'Experience', 'Contact']
@@ -47,44 +48,48 @@ function NavBar() {
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <ThemeProvider theme={theme}>
-                            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                                <div className='app-bar-center'>
+                            <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'space-between' }}>
+                                <div className='app-bar-center' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '80%' }}>
+                                    {/* Home Page */}
                                     <span className='app-bar-btn'>                              
-                                        <Link to="/home">
-                                        <Button sx={{ my: 2, color: 'white', display: 'block' }}>
-                                            <Typography variant="body1">
-                                                Home
-                                            </Typography>
-                                        </Button>
+                                        <Link to="/home" className='button'>
+                                            <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+                                                <Typography variant="body1">
+                                                    Home
+                                                </Typography>
+                                            </Button>
                                         </Link>
                                     </span>
+                                    {/* Projects Page */}
                                     <span className='app-bar-btn'>
-                                        <Link to="/projects">
-                                        <Button sx={{ my: 2, color: 'white', display: 'block' }}>
-                                            <Typography variant="body1">
-                                                Projects
-                                            </Typography>
-                                        </Button>
+                                        <Link to="/projects" className='button'>
+                                            <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+                                                <Typography variant="body1">
+                                                    Projects
+                                                </Typography>
+                                            </Button>
                                         </Link>
                                     </span>
+                                    {/* Experience Page */}    
                                     <span className='app-bar-btn'>
-                                        <Link to="/experience">
+                                        <Link to="/experience" className='button'>
                                             <Button sx={{ my: 2, color: 'white', display: 'block' }}>
                                                 <Typography variant="body1">
                                                     Experience
                                                 </Typography>
                                             </Button>
                                         </Link>
-                                    </span>
-                                        <span className='app-bar-btn'>
-                                        <Link to="/contact">
-                                        <Button sx={{ my: 2, color: 'white', display: 'block' }}>
-                                            <Typography variant="body1">
-                                                Contact
-                                            </Typography>
-                                        </Button>
+                                    </span> 
+                                    {/* Contact Page */}    
+                                    <span className='app-bar-btn'>
+                                        <Link to="/contact" className='button'>
+                                            <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+                                                <Typography variant="body1">
+                                                    Contact
+                                                </Typography>
+                                            </Button>
                                         </Link>
-                                    </span>
+                                    </span>                                        
                                 </div>
                             </Box>
                         </ThemeProvider>

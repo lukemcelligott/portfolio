@@ -1,3 +1,7 @@
+html {
+  scrollbar-gutter: stable;
+}
+
 .App {
   text-align: center;
 }
@@ -30,7 +34,6 @@
 
 .app-bar-center {
   margin: auto;
-  
   justify-content: space-between;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -39,30 +42,28 @@
 
 .app-bar-btn {
   /* width: 300%; */
+  justify-content: center;
 }
 
 .background {
   background-color: var(--black);
 }
 
+.button {
+  text-decoration: none;
+}
+
 .container {
   padding: 15% 0;
   text-align: center;
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.text-font {
+.font {
   color: #EEEEEE;
   font-family: 'JetBrains Mono', monospace;
-  font-size: x-large;
-}
-
-.header-font {
-  color: #EEEEEE;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: xx-large;
 }
 
 .MuiAppBar-root {

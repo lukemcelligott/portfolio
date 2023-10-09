@@ -6,12 +6,16 @@
 
 .github {
     margin-left: 90%;
-    color: white;
+    color: #EEEEEE;
 }
 
 .grid {
     padding-left: 1%;
     padding-right: 1%;
+}
+
+.p-height {
+    min-height: 200px;
 }
 
 .skills {

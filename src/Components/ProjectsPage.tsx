@@ -5,7 +5,6 @@ import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid';
-
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link } from 'react-router-dom';
 
@@ -30,13 +29,15 @@ function ProjectsPage() {
                                 <h3 className='font'>
                                     Portfolio
                                 </h3>
-                                <p className='font'>
+                                <p className='font p-height'>
                                     This portfolio site is built using <span className="skills">React</span> and <span className="skills">TypeScript</span>. I also focused on improving my web design
                                     skills by using <span className="skills">CSS</span> and <span className="skills">MUI</span>. This project was a quick way of teaching myself about fundamental web principles.
                                 </p>
-                                <Link to={portfolio} target="_blank" rel="noopener noreferrer">
-                                    <GitHubIcon className='github'></GitHubIcon>
-                                </Link>
+                                <div>
+                                    <Link to={portfolio} target="_blank" rel="noopener noreferrer">
+                                        <GitHubIcon className='github'></GitHubIcon>
+                                    </Link>
+                                </div>
                             </CardContent>
                         </Card>
                     </Grid>
@@ -47,7 +48,7 @@ function ProjectsPage() {
                                 <h3 className='font'>
                                     Scrumbs
                                 </h3>
-                                <p className='font'>
+                                <p className='font p-height'>
                                     Scumbs is a <span className="skills">Scrum</span> management web application. I had done full-stack development in order to build this application using
                                     <span className="skills"> Angular</span>. Before development began, my partner and I worked to develop a variety of models and diagrams including 
                                     <span className="skills"> BLP models</span>, <span className="skills">DFD diagrams</span>, <span className="skills">use case diagrams</span>, and more.
@@ -67,7 +68,7 @@ function ProjectsPage() {
                                 <h3 className='font'>
                                     Offerly
                                 </h3>
-                                <p className='font'>
+                                <p className='font p-height'>
                                     For my Software Engineering class, I had worked to develop Offerly, an online marketplace. This project took inspiration from eBay and Amazon, acting as a
                                     hub for people to sell, buy, and bid on used items. Offerly was build using <span className="skills">Java</span>, <span className="skills">Maven</span>, 
                                     <span className="skills"> MySQL</span>, <span className="skills">Spring Boot</span>, <span className="skills">HTML</span> and <span className="skills">CSS</span>.

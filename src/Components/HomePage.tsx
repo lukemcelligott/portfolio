@@ -3,7 +3,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import './../App.css';
-import './styles/HomePage.css'
+import './styles/HomePage.css';
 import NavBar from './NavBar';
 
 function HomePage() {
@@ -11,24 +11,27 @@ function HomePage() {
     const name = 'Luke McElligott';
 
     useEffect(() => {
-        if (typedName === '') {
-          const type = async () => {
-            for (let i = 0; i < name.length; i++) {
+      let i = 0;
+
+      const type = async () => {
+          while (i < name.length) {
               setTypedName((prevTypedName) => prevTypedName + name[i]);
+              i++;
               await new Promise((resolve) => setTimeout(resolve, 100)); // Adjust typing speed here
-            }
-          };
-    
+          }
+      };
+
+      if (typedName === '') {
           type();
-        }
-    }, [typedName, name]);
+      }
+  }, [typedName]);
 
     return (
         <div>
             <NavBar />
             <div className='intro font'>
                 <p>Hello, my name is</p>
-                <h2>{typedName}</h2>
+                <h2 className='accent'>{typedName}</h2>
                 <p>cybersecurity student, developer hobbyist, tech enjoyer</p>
             </div>
         </div>
