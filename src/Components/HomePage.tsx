@@ -24,14 +24,17 @@ function HomePage() {
       if (typedName === '') {
           type();
       }
-  }, [typedName]);
+    }, [typedName]);
 
     return (
         <div>
             <NavBar />
             <div className='intro font'>
                 <p>Hello, my name is</p>
-                <h2 className='accent'>{typedName}</h2>
+                <div className='typewriter'>
+                    <h2 className='accent'>Luke McElligott</h2>
+                </div>
+                
                 <p>cybersecurity student, developer hobbyist, tech enjoyer</p>
             </div>
         </div>

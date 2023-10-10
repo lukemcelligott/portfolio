@@ -49,7 +49,7 @@ function ProjectsPage() {
                                     Scrumbs
                                 </h3>
                                 <p className='font p-height'>
-                                    Scumbs is a <span className="skills">Scrum</span> management web application. I had done full-stack development in order to build this application using
+                                    Scumbs is a <span className="skills">Scrum</span> management web application. I learned full-stack development in order to build this application using
                                     <span className="skills"> Angular</span>. Before development began, my partner and I worked to develop a variety of models and diagrams including 
                                     <span className="skills"> BLP models</span>, <span className="skills">DFD diagrams</span>, <span className="skills">use case diagrams</span>, and more.
                                     Some of the other technology I learned from this project include <span className="skills">MongoDB</span>, <span className="skills">TypeScript</span>,
