@@ -4,4 +4,10 @@
 
 .icons {
     color: #EEEEEE;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 }
+
+.icons:hover {
+    transform: scale(1.2); /* Scale up to 120% on hover */
+    color: #4ECCA3 /* Change the color on hover (adjust to your preferred color) */
+  }
