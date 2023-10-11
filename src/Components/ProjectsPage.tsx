@@ -1,6 +1,6 @@
 /* Show information about projects */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -16,6 +16,10 @@ function ProjectsPage() {
     const portfolio = "https://github.com/lukemcelligott/portfolio";
     const scrumbs = "https://github.com/lukemcelligott/Scrumbs";
     const github = "https://github.com/lukemcelligott";
+
+    useEffect(() => {
+        document.title = 'Projects | Luke McElligott';
+    }, []);
 
     return (
         <div>
