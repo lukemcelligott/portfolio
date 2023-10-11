@@ -20,7 +20,7 @@ function HomePage() {
                     <h2 className='accent'>Luke McElligott</h2>
                 </div>
                 
-                <p>cybersecurity student | developer hobbyist | techie</p>
+                <p>cybersecurity student | software developer | techie</p>
             </div>
         </div>
     )
