@@ -1,6 +1,6 @@
 /* Show contact information */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -18,6 +18,10 @@ function ContactPage() {
     const email = 'mailto:lpm1006@sru.edu';
     const linkedin = 'https://www.linkedin.com/in/luke-mcelligott/';
     const github = 'https://github.com/lukemcelligott';
+
+    useEffect(() => {
+        document.title = 'Contact | Luke McElligott';
+    }, []);
 
     return (
         <div>

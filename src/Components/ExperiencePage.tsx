@@ -1,6 +1,6 @@
 /* Display technical experience */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 
 import Card from '@mui/material/Card';
@@ -18,6 +18,10 @@ import './styles/ExperiencePage.css';
 import NavBar from './NavBar';
 
 function ExperiencePage() {
+    useEffect(() => {
+        document.title = 'Experience | Luke McElligott';
+    }, []);
+
     return (
         <div>
             <NavBar />
