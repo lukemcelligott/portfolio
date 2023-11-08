@@ -15,7 +15,7 @@ import './styles/ContactPage.css';
 import NavBar from './NavBar';
 
 function ContactPage() {
-    const email = 'mailto:lpm1006@sru.edu';
+    const email = 'mailto:lukemcdev@gmail.com';
     const linkedin = 'https://www.linkedin.com/in/luke-mcelligott/';
     const github = 'https://github.com/lukemcelligott';
 

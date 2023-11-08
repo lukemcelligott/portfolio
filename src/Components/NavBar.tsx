@@ -15,26 +15,28 @@ import { Link } from 'react-router-dom';
 
 const theme = createTheme({
     typography: {
-        fontFamily: 'JetBrains Mono',
-        body1: {
-            color: '#EEEEEE',
-            fontSize: 22
-          },
-        
+      fontFamily: 'JetBrains Mono',
+      h1: {
+        fontSize: '3rem',
+      },
+      h2: {
+        fontSize: '2.5rem',
+      },
+      body1: {
+        fontSize: '1.5rem',
+        color: '#EEEEEE',
+      },
     },
-});
-    
-const header = createTheme({
-  typography: {
-    body1: {
-      color: '#EEEEEE',
-      fontSize: 32
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 600,
+        md: 960,
+        lg: 1280,
+        xl: 1920,
+      },
     },
-    h1: {
-      color: theme.palette.secondary.main
-    },
-  }
-});
+  });
 
 function NavBar() {
     return (

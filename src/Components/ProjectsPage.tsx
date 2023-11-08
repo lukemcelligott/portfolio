@@ -27,7 +27,7 @@ function ProjectsPage() {
             <div>
                 <Grid container spacing={2} className='grid'>
                     {/* Portfolio Project */}
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={12} md={4}>
                         <Card sx={{ minWidth: 275 }} className="card">
                             <CardContent>
                                 <h3 className='font'>
@@ -46,7 +46,7 @@ function ProjectsPage() {
                         </Card>
                     </Grid>
                     {/* Scrumbs Project */}
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={12} md={4}>
                         <Card sx={{ minWidth: 275 }} className="card">
                             <CardContent>
                                 <h3 className='font'>
@@ -66,7 +66,7 @@ function ProjectsPage() {
                         </Card>
                     </Grid>
                     {/* Scrumbs Project */}
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={12} md={4}>
                         <Card sx={{ minWidth: 275 }} className="card">
                             <CardContent>
                                 <h3 className='font'>
