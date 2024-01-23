@@ -16,6 +16,7 @@ function ProjectsPage() {
     const portfolio = "https://github.com/lukemcelligott/portfolio";
     const scrumbs = "https://github.com/lukemcelligott/Scrumbs";
     const offerly = "https://github.com/lukemcelligott/Offerly";
+    const fretflow = "https://github.com/lukemcelligott/FretFlow";
 
     useEffect(() => {
         document.title = 'Projects | Luke McElligott';
@@ -39,7 +40,7 @@ function ProjectsPage() {
                                 </p>
                                 <div>
                                     <Link to={portfolio} target="_blank" rel="noopener noreferrer">
-                                        <GitHubIcon className='github'></GitHubIcon>
+                                        <GitHubIcon className='github icons'></GitHubIcon>
                                     </Link>
                                 </div>
                             </CardContent>
@@ -60,12 +61,12 @@ function ProjectsPage() {
                                     <span className="skills"> NodeJS</span>, and <span className="skills">Express</span>.
                                 </p>
                                 <Link to={scrumbs} target="_blank" rel="noopener noreferrer">
-                                    <GitHubIcon className='github'></GitHubIcon>
+                                    <GitHubIcon className='github icons'></GitHubIcon>
                                 </Link>
                             </CardContent>
                         </Card>
                     </Grid>
-                    {/* Scrumbs Project */}
+                    {/* Offerly Project */}
                     <Grid item xs={12} sm={12} md={4}>
                         <Card sx={{ minWidth: 275 }} className="card">
                             <CardContent>
@@ -79,7 +80,26 @@ function ProjectsPage() {
                                     I had learned a lot about <span className="skills">MVC</span> and <span className="skills">data structures</span> projects because of this project.
                                 </p>
                                 <Link to={offerly} target="_blank" rel="noopener noreferrer">
-                                    <GitHubIcon className='github'></GitHubIcon>
+                                    <GitHubIcon className='github icons'></GitHubIcon>
+                                </Link>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    {/* Fret Flow Project */}
+                    <Grid item xs={12} sm={12} md={4}>
+                        <Card sx={{ minWidth: 275 }} className="card">
+                            <CardContent>
+                                <h3 className='font'>
+                                    Fret Flow
+                                </h3>
+                                <p className='font p-height'>
+                                    As a hobbyist guitar player, I wanted to develop a website that contained a lot of the different tools I found myself using while playing. This includes a 
+                                    chord identifier, chord progression generator, scale practice tool, and more. This project was developed using <span className="skills">React</span> and 
+                                    <span className="skills"> Typescript</span>. I also implemented <span className="skills">PostgreSQL</span> for database management and <span className="skills">Django </span>
+                                    for my custom <span className="skills">API</span>.
+                                </p>
+                                <Link to={fretflow} target="_blank" rel="noopener noreferrer">
+                                    <GitHubIcon className='github icons'></GitHubIcon>
                                 </Link>
                             </CardContent>
                         </Card>
