@@ -15,7 +15,7 @@ import NavBar from './NavBar';
 function ProjectsPage() {
     const portfolio = "https://github.com/lukemcelligott/portfolio";
     const scrumbs = "https://github.com/lukemcelligott/Scrumbs";
-    const github = "https://github.com/lukemcelligott";
+    const offerly = "https://github.com/lukemcelligott/Offerly";
 
     useEffect(() => {
         document.title = 'Projects | Luke McElligott';
@@ -78,7 +78,7 @@ function ProjectsPage() {
                                     <span className="skills"> MySQL</span>, <span className="skills">Spring Boot</span>, <span className="skills">HTML</span> and <span className="skills">CSS</span>.
                                     I had learned a lot about <span className="skills">MVC</span> and <span className="skills">data structures</span> projects because of this project.
                                 </p>
-                                <Link to={github} target="_blank" rel="noopener noreferrer">
+                                <Link to={offerly} target="_blank" rel="noopener noreferrer">
                                     <GitHubIcon className='github'></GitHubIcon>
                                 </Link>
                             </CardContent>
