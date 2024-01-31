@@ -5,7 +5,6 @@ import logo from './logo.svg';
 
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Grid from '@mui/material/Grid';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -92,8 +91,8 @@ function ExperiencePage() {
                                     <span>May 2022 - Aug 2022</span>
                                 </h5>
                                 <p>
-                                    Researched and implemented <span className="skills">honeypot systems</span> through the company's network. Utilized numerous <span className="skills">Canary security </span>
-                                    mechanisms that would be used by the red team in the future. Collaborated with experienced engineers to perform <span className="skills">penetration tests</span>. Won a 
+                                    Researched and implemented <span className="skills">honeypot systems</span> throughout the company's network. Utilized numerous <span className="skills">Canary security </span>
+                                    mechanisms that would be used by the red team in the future. Collaborated with experienced engineers to perform <span className="skills">penetration tests</span>. Competed in and won a 
                                     <span className="skills"> CTF</span> competition among all other cybersecurity interns at the company.
                                 </p>                                    
                             </CardContent>
@@ -125,7 +124,7 @@ function ExperiencePage() {
                         </Card>
                     </TimelineContent>
                 </TimelineItem>
-                </Timeline>
+            </Timeline>
             </div>
         </div>
     )
