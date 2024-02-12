@@ -37,8 +37,8 @@ function ProjectsPage() {
                                     Portfolio
                                 </h3>
                                 <p className='font p-height'>
-                                    This portfolio site is built using <span className="skills">React</span> and <span className="skills">TypeScript</span>. I also focused on improving my web design
-                                    skills by using <span className="skills">CSS</span> and <span className="skills">MUI</span>. This project was a quick way of teaching myself about fundamental web principles.
+                                    This portfolio site is built using <span className="skills">React</span> and <span className="skills">TypeScript</span>. I wanted to focus on improving my web design
+                                    skills by using <span className="skills">CSS</span> and <span className="skills">MUI</span>. This project was a quick way of teaching myself about fundamental web principles as well as hosting.
                                 </p>
                                 <div>
                                     <Link to={portfolio} target="_blank" rel="noopener noreferrer">
@@ -56,7 +56,7 @@ function ProjectsPage() {
                                     Scrumbs
                                 </h3>
                                 <p className='font p-height'>
-                                    Scumbs is a <span className="skills">Scrum</span> management web application. I learned full-stack development in order to build this application using
+                                    Scumbs is a <span className="skills">scrum</span> management web application. I learned full-stack development in order to build this application using
                                     <span className="skills"> Angular</span>. Before development began, my partner and I worked to develop a variety of models and diagrams including 
                                     <span className="skills"> BLP models</span>, <span className="skills">DFD diagrams</span>, <span className="skills">use case diagrams</span>, and more.
                                     Some of the other technology I learned from this project include <span className="skills">MongoDB</span>, <span className="skills">TypeScript</span>,
@@ -79,7 +79,7 @@ function ProjectsPage() {
                                     For my Software Engineering class, I had worked to develop Offerly, an online marketplace. This project took inspiration from eBay and Amazon, acting as a
                                     hub for people to sell, buy, and bid on used items. Offerly was build using <span className="skills">Java</span>, <span className="skills">Maven</span>, 
                                     <span className="skills"> MySQL</span>, <span className="skills">Spring Boot</span>, <span className="skills">HTML</span> and <span className="skills">CSS</span>.
-                                    I had learned a lot about <span className="skills">MVC</span> and <span className="skills">data structures</span> projects because of this project.
+                                    I had learned a lot about <span className="skills">MVC</span> and <span className="skills">data structures</span> because of this project.
                                 </p>
                                 <Link to={offerly} target="_blank" rel="noopener noreferrer">
                                     <GitHubIcon className='github icons'></GitHubIcon>
@@ -98,7 +98,7 @@ function ProjectsPage() {
                                     As a hobbyist guitar player, I wanted to develop a website that contained a lot of the different tools I found myself using while playing. This includes a 
                                     chord identifier, chord progression generator, scale practice tool, and more. This project was developed using <span className="skills">React</span> and 
                                     <span className="skills"> Typescript</span>. I also implemented <span className="skills">PostgreSQL</span> for database management and <span className="skills">Django </span>
-                                    for my custom <span className="skills">API</span>.
+                                    for my custom <span className="skills">RESTfulAPI</span>.
                                 </p>
                                 <Link to={fretflow} target="_blank" rel="noopener noreferrer">
                                     <GitHubIcon className='github icons'></GitHubIcon>

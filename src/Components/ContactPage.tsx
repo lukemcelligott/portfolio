@@ -27,7 +27,7 @@ function ContactPage() {
         <div>
             <NavBar />
             <div className='intro font'>
-                <h5 className='header'>I can be reached using the links below:</h5>
+                <h5 className='header'>Feel free to reach out to me! I can be reached using the links below:</h5>
                 <Stack direction="row" spacing={3} alignItems="flex-end">
                     <Link to={email} target="_blank" rel="noopener noreferrer">
                         <MailOutlineIcon className='icons' sx={{ fontSize: 40 }}/>
