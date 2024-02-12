@@ -43,7 +43,7 @@ function ExperiencePage() {
                                         <span>Jun 2021 - Aug 2021</span>
                                     </h5>
                                     <p>
-                                        Learned and implemented a <span className='skills'>SIEM</span> system within the company. Actively took part in planning, rolling out, and reviewing 
+                                        Learned and implemented a <span className='skills'>SIEM (EventLog Analyzer)</span> system within the company. Actively took part in planning, rolling out, and reviewing 
                                         <span className="skills"> phishing campaigns</span> throughout the company.
                                     </p>                                    
                                 </CardContent>
@@ -108,17 +108,17 @@ function ExperiencePage() {
                         <Card sx={{ minWidth: 275 }} className="card">
                             <CardContent className="font">
                                 <h3 className='skills'>
-                                    Software Engineering Intern
+                                    Software Engineer Intern
                                 </h3>
                                 <h5 className="job-info">
                                     <span>Ford Motor Company</span>
                                     <span>May 2023 - Aug 2023</span>
                                 </h5>
                                 <p>
-                                    Developed a <span className="skills">PWA</span> capable of handling the required 4,000+ user base. Using <span className="skills">React</span> and <span className="skills">TypeScript, </span>
-                                    I had developed a responsive frontend, optimized for mobile devices. The <span className="skills">Java</span>, <span className="skills">Spring Boot, </span>
+                                    Developed a <span className="skills">PWA</span> capable of handling the required 4,000+ user base. Using <span className="skills">React</span> and <span className="skills">TypeScript</span>,
+                                    I had developed a responsive frontend, optimized for mobile devices. The <span className="skills">Java</span>, <span className="skills">Spring Boot</span>,
                                     and <span className="skills">MSSQL</span> backend used AD to make secure database calls. <span className="skills">Cucumber.js</span> was used to achieve
-                                    test driven development.
+                                    test driven development. <span className='skills'>Tekton</span> was used in order to rollout this project following <span className='CI/CD'>principles</span>.
                                 </p>                                    
                             </CardContent>
                         </Card>
