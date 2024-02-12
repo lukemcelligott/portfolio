@@ -6,6 +6,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkIcon from '@mui/icons-material/Link';
 import { Link } from 'react-router-dom';
 
 import './../App.css';
@@ -17,6 +18,7 @@ function ProjectsPage() {
     const scrumbs = "https://github.com/lukemcelligott/Scrumbs";
     const offerly = "https://github.com/lukemcelligott/Offerly";
     const fretflow = "https://github.com/lukemcelligott/FretFlow";
+    const cyberforce = "https://cyberforce.energy.gov/cyberforce-competition/prior-competitions/doe-cyberforce-competition-2022/";
 
     useEffect(() => {
         document.title = 'Projects | Luke McElligott';
@@ -100,6 +102,22 @@ function ProjectsPage() {
                                 </p>
                                 <Link to={fretflow} target="_blank" rel="noopener noreferrer">
                                     <GitHubIcon className='github icons'></GitHubIcon>
+                                </Link>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    {/* CyberForce Competition */}
+                    <Grid item xs={12} sm={12} md={4}>
+                        <Card sx={{ minWidth: 275 }} className="card">
+                            <CardContent>
+                                <h3 className='font'>
+                                    CyberForce Competition
+                                </h3>
+                                <p className='font p-height'>
+                                    The CyberForce Competition is a cybersecurity-centered competition that is hosted by the DoE. This competition simulates <span className='skills'>real attacking/defending cybersecurity events</span> and it is the job of the teams involved to accomplish certain goals. My team was responsible for <span className='skills'>blue-teaming</span> in order to detect, monitor, and stop attacks happening on our simulated network. Through this challenge, my team members and I were able to sharpen our skills in <span className='skills'>incident response</span>, <span className='skills'>network defense</span>, and <span className='skills'>digital forensics</span>.
+                                </p>
+                                <Link to={cyberforce} target="_blank" rel="noopener noreferrer">
+                                    <LinkIcon className='github icons'></LinkIcon>
                                 </Link>
                             </CardContent>
                         </Card>
