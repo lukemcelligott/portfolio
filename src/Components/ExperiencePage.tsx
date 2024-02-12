@@ -118,7 +118,7 @@ function ExperiencePage() {
                                     Developed a <span className="skills">PWA</span> capable of handling the required 4,000+ user base. Using <span className="skills">React</span> and <span className="skills">TypeScript</span>,
                                     I had developed a responsive frontend, optimized for mobile devices. The <span className="skills">Java</span>, <span className="skills">Spring Boot</span>,
                                     and <span className="skills">MSSQL</span> backend used AD to make secure database calls. <span className="skills">Cucumber.js</span> was used to achieve
-                                    test driven development. <span className='skills'>Tekton</span> was used in order to rollout this project following <span className='CI/CD'>principles</span>.
+                                    test driven development. <span className='skills'>Tekton</span> was used in order to rollout this project following <span className='skills'>CI/CD</span> principles.
                                 </p>                                    
                             </CardContent>
                         </Card>
