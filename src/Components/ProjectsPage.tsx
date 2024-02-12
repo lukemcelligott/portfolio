@@ -114,7 +114,7 @@ function ProjectsPage() {
                                     CyberForce Competition
                                 </h3>
                                 <p className='font p-height'>
-                                    The CyberForce Competition is a cybersecurity-centered competition that is hosted by the DoE. This competition simulates <span className='skills'>real attacking/defending cybersecurity events</span> and it is the job of the teams involved to accomplish certain goals. My team was responsible for <span className='skills'>blue-teaming</span> in order to detect, monitor, and stop attacks happening on our simulated network. Through this challenge, my team members and I were able to sharpen our skills in <span className='skills'>incident response</span>, <span className='skills'>network defense</span>, and <span className='skills'>digital forensics</span>.
+                                    The CyberForce Competition is a cybersecurity-centered competition that is hosted by the DoE. This competition simulates <span className='skills'>real attacking/defending cybersecurity events</span> and it is the job of the teams involved to accomplish certain goals. Through this challenge, my team members and I were able to sharpen our skills in <span className='skills'>incident response</span>, <span className='skills'>network defense</span>, and <span className='skills'>digital forensics</span>.
                                 </p>
                                 <Link to={cyberforce} target="_blank" rel="noopener noreferrer">
                                     <LinkIcon className='github icons'></LinkIcon>
