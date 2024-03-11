@@ -33,7 +33,7 @@ function ExperiencePage() {
                         <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent>
-                        <Card sx={{ minWidth: 275 }} className="card">
+                        <Card raised sx={{ minWidth: 275 }} className="card">
                                 <CardContent className="font">
                                     <h3 className='skills'>
                                         IT Security & Compliance Intern
@@ -57,7 +57,7 @@ function ExperiencePage() {
                         <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent>
-                        <Card sx={{ minWidth: 275 }} className="card">
+                        <Card raised sx={{ minWidth: 275 }} className="card">
                             <CardContent className="font">
                                 <h3 className='skills'>
                                     Student Web Developer
@@ -81,7 +81,7 @@ function ExperiencePage() {
                         <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent>
-                        <Card sx={{ minWidth: 275 }} className="card">
+                        <Card raised sx={{ minWidth: 275 }} className="card">
                             <CardContent className="font">
                                 <h3 className='skills'>
                                     Cybersecurity Red Team Intern
@@ -105,7 +105,7 @@ function ExperiencePage() {
                         <TimelineDot className='dot-green' variant="outlined" />
                         </TimelineSeparator>
                     <TimelineContent>
-                        <Card sx={{ minWidth: 275 }} className="card">
+                        <Card raised sx={{ minWidth: 275 }} className="card">
                             <CardContent className="font">
                                 <h3 className='skills'>
                                     Software Engineer Intern
