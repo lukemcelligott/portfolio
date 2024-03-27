@@ -1,10 +1,11 @@
 /* Show information about projects */
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid';
+import Modal from '@mui/material/Modal';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
 import { Link } from 'react-router-dom';
@@ -13,7 +14,47 @@ import './../App.css';
 import './styles/ProjectsPage.css';
 import NavBar from './NavBar';
 
+// Scrumbs assets
+import ScrumbsLogo from '../Assets/Scrumbs/Images/scrumbs-favicon.png';
+import ScrumbsDash from '../Assets/Scrumbs/Images/scrumbs-dash.png';
+import ScrumbsBoard from '../Assets/Scrumbs/Images/scrumbs-board.png';
+// import ScrumbsDFD from '../Assets/Scrumbs/Images/scrumbs-dfd.png';
+// import ScrumbsUseCase from '../Assets/Scrumbs/Images/scrumbs-usecase.png';
+
+// Offerly assets
+import OfferlyBrowse from '../Assets/Offerly/Images/offerly-browse.png';
+import OfferlyListing from '../Assets/Offerly/Images/offerly-listing.png';
+// import OfferlyLogin from '../Assets/Offerly/Images/offerly-login.png';
+import OfferlyLogo from '../Assets/Offerly/Images/offerly-logo.png';
+// import OfferlyMessaging from '../Assets/Offerly/Images/offerly-messaging.png';
+// import OfferlyTechManual from '../Assets/Offerly/Docs/Offerly-Tech-Manual.pdf';
+// import OfferlyUserManual from '../Assets/Offerly/Docs/Offerly-User-Manual.pdf';
+// import OfferlyPresentation from '../Assets/Offerly/Docs/Offerly-Final-Presentation.pptx';
+
+// Cyberforce assets
+import CyberForceLogo from '../Assets/CyberForce/cyberforce-logo.png';
+
+const style = {
+    position: 'absolute' as 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+};
+
 function ProjectsPage() {
+    // modal variables
+    const [portfolioOpen, setPortfolioOpen] = useState(false);
+    const [scrumbsOpen, setScrumbsOpen] = useState(false);
+    const [offerlyOpen, setOfferlyOpen] = useState(false);
+    const [fretFlowOpen, setFretFlowOpen] = useState(false);
+    const [cyberforceOpen, setCyberforceOpen] = useState(false);
+
+    // project links
     const portfolio = "https://github.com/lukemcelligott/portfolio";
     const scrumbs = "https://github.com/lukemcelligott/Scrumbs";
     const offerly = "https://github.com/lukemcelligott/Offerly";
@@ -26,6 +67,52 @@ function ProjectsPage() {
         document.title = 'Projects | Luke McElligott';
     }, []);
 
+    // Function to open the modal
+    const handleOpen = (project: string) => {
+        switch(project){
+            case 'portfolio':
+                setPortfolioOpen(true);
+                break;
+            case 'scrumbs':
+                setScrumbsOpen(true);
+                break;
+            case 'offerly':
+                setOfferlyOpen(true);
+                break;
+            case 'fretFlow':
+                setFretFlowOpen(true);
+                break;
+            case 'cyberforce':
+                setCyberforceOpen(true);
+                break;
+            default:
+                break;
+        }
+    };
+
+    // Function to close the modal
+    const handleClose = (project: string) => {
+        switch (project) {
+            case 'portfolio':
+                setPortfolioOpen(false);
+                break;
+            case 'scrumbs':
+                setScrumbsOpen(false);
+                break;
+            case 'offerly':
+                setOfferlyOpen(false);
+                break;
+            case 'fretFlow':
+                setFretFlowOpen(false);
+                break;
+            case 'cyberforce':
+                setCyberforceOpen(false);
+                break;
+            default:
+                break;
+        }
+    };
+
     return (
         <div>
             <NavBar />
@@ -33,7 +120,7 @@ function ProjectsPage() {
                 <Grid container spacing={2} className='grid'>
                     {/* Portfolio Project */}
                     <Grid item xs={12} sm={12} md={4}>
-                        <Card raised sx={{ minWidth: 275 }} className="card">
+                        <Card sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('portfolio')}>
                             <CardContent>
                                 <h3 className='font'>
                                     Portfolio
@@ -52,7 +139,7 @@ function ProjectsPage() {
                     </Grid>
                     {/* Scrumbs Project */}
                     <Grid item xs={12} sm={12} md={4}>
-                        <Card raised sx={{ minWidth: 275 }} className="card">
+                        <Card sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('scrumbs')}>
                             <CardContent>
                                 <h3 className='font'>
                                     Scrumbs
@@ -72,7 +159,7 @@ function ProjectsPage() {
                     </Grid>
                     {/* Offerly Project */}
                     <Grid item xs={12} sm={12} md={4}>
-                        <Card raised sx={{ minWidth: 275 }} className="card">
+                        <Card sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('offerly')}>
                             <CardContent>
                                 <h3 className='font'>
                                     Offerly
@@ -91,7 +178,7 @@ function ProjectsPage() {
                     </Grid>
                     {/* Fret Flow Project */}
                     <Grid item xs={12} sm={12} md={4}>
-                        <Card raised sx={{ minWidth: 275 }} className="card">
+                        <Card sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('fretFlow')}>
                             <CardContent>
                                 <h3 className='font'>
                                     Fret Flow
@@ -110,7 +197,7 @@ function ProjectsPage() {
                     </Grid>
                     {/* CyberForce Competition */}
                     <Grid item xs={12} sm={12} md={4}>
-                        <Card raised sx={{ minWidth: 275 }} className="card">
+                        <Card sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('cyberforce')}>
                             <CardContent>
                                 <h3 className='font'>
                                     CyberForce Competition
@@ -163,6 +250,174 @@ function ProjectsPage() {
                     </Grid>
                 </Grid>
             </div>
+
+            {/* Portfolio Modal */}
+            <Modal
+                open={portfolioOpen}
+                onClose={() => handleClose('portfolio')}
+                aria-labelledby="modal-title"
+                aria-describedby="modal-description"
+            >
+                <Card sx={{ minWidth: 275 }} className="modal-card">
+                    <CardContent className='modal-content'>
+                        <h3 className='font'>
+                            Portoflio
+                        </h3>
+                        <p className='font'>
+                            <span className='skills'>Tech Stack:</span>
+                        </p>
+                        <p className='font'>React | TypeScript | Material UI</p>
+                        <p className='font'>
+                            <span className='skills'>Deployment:</span>
+                        </p>
+                        <p className='font'>GitHub Actions | Vercel</p>
+                        <hr></hr>
+                        <p className='font'>
+                            Thank you for visiting my personal portfolio! I developed this site so that I could display some of the different projects I've worked on over time. This was the first project I've deployed on my own.
+                        </p>
+                        <Link to={portfolio} target="_blank" rel="noopener noreferrer">
+                            <GitHubIcon className='github icons'></GitHubIcon>
+                        </Link>
+                    </CardContent>
+                </Card>
+            </Modal>
+            {/* Scrumbs Modal */}
+            <Modal
+                open={scrumbsOpen}
+                onClose={() => handleClose('scrumbs')}
+                aria-labelledby="modal-title"
+                aria-describedby="modal-description"
+            >
+                <Card sx={{ style }} className="modal-card">
+                    <CardContent  className='modal-content'>
+                        <div className="header-container">
+                            <h3 className='font'>
+                                Scrumbs
+                            </h3>
+                            <img src={ScrumbsLogo} alt="Scrumbs Logo" className="logo-image" />
+                        </div>
+                        <p className='font'>
+                            <span className='skills'>Tech Stack:</span>
+                        </p>
+                        <p className='font'>Angular | TypeScript | MongoDB | NodeJS | Express</p>
+                        <p className='font'>
+                            <span className='skills'>Security Features:</span>
+                        </p>
+                        <p className='font'>JWT Auth | HTTP Interceptor | User Event Logging | Password Hashing | Authentication Guard</p>
+                        <hr></hr>
+                        <p className='font'>
+                            Scrumbs is an interactive web app for project management. It simulates a virtual Scrum board that teams (and stakeholders) can use to create, read, update, and delete tasks, as well as monitor the progression of the project. Scrumbs also features an admin panel for managing users and teams.
+                        </p>
+                        <img src={ScrumbsDash} alt="Scrumbs Dashboard" className="project-image" />
+                        <p className='font'>
+                            Scrumbs was a project for my Software Assurance class. My teamate and I focused on implementing BLP models, DFD models, and numerous other elements common to the SDLC to create a secure and practical product. Through this project, we were able to learn about developing a secure project.
+                        </p>
+                        <img src={ScrumbsBoard} alt="Scrumbs Home" className="project-image" />
+                        <Link to={scrumbs} target="_blank" rel="noopener noreferrer">
+                            <GitHubIcon className='github icons'></GitHubIcon>
+                        </Link>
+                    </CardContent>
+                </Card>
+            </Modal>
+            {/* Offerly Modal */}
+            <Modal
+                open={offerlyOpen}
+                onClose={() => handleClose('offerly')}
+                aria-labelledby="modal-title"
+                aria-describedby="modal-description"
+            >
+                <Card sx={{ style }} className="modal-card">
+                    <CardContent className='modal-content'>
+                        <div className="header-container">
+                            <h3 className='font'>
+                                Offerly
+                            </h3>
+                            <img src={OfferlyLogo} alt="Offerly Logo" className="logo-image" />
+                        </div>
+                        <p className='font'>
+                            <span className='skills'>Tech Stack:</span>
+                        </p>
+                        <p className='font'>Java | JavaScript | Spring Boot | Thymeleaf | Maven | JUnit | MySQL</p>
+                        <p className='font'>
+                            <span className='skills'>Deployment:</span>
+                        </p>
+                        <p className='font'>Tomcat</p>
+                        <hr></hr>
+                        <p className='font'>
+                            Offerly was inherited from a previous team of software engineering students. Our team was tasked with adding new features and updating the UI, as well as cleaning up the code. Some of the features we added were a social messaging system, a payment page, an auction system with automatic bidding, and a user rating system.
+                        </p>
+                        <img src={OfferlyBrowse} alt="Offerly Browse Page" className="project-image" />
+                        <p className='font'>
+                            Very quickly, we realized that the code was a mess. We spent a lot of time refactoring, organizing the database, and implementing new data structuers on the backend. One of our early successes was creating a dynamic category tree that would allow us to manage the hierarchy of the categories. We also revamped the admin panel to allow for easier management of users and items. From there, many weeks were spent adding new features and updating the UI.
+                        </p>
+                        <img src={OfferlyListing} alt="Offerly Listing Page" className="project-image" />
+                        <p className='font'>
+                            <span className='skills'>Documentation:</span>
+                        </p>
+                        <p className="font">
+                            <a className='font' href="../../../public/Assets/Offerly/Docs/Offerly-Tech-Manual.pdf" target="_blank">Tech Manual (pdf)</a> | <a className='font' href="../../../public/Assets/Offerly/Docs/Offerly-User-Manual.pdf" target="_blank">User Manual (pdf)</a> | <a className='font' href="../../../public/Assets/Offerly/Docs/Offerly-Final-Presentation.pptx" target="_blank">Presentation (pptx)</a>
+                        </p>
+                        <Link to={offerly} target="_blank" rel="noopener noreferrer">
+                            <GitHubIcon className='github icons'></GitHubIcon>
+                        </Link>
+                    </CardContent>
+                </Card>
+            </Modal>
+            {/* FretFlow Modal */}
+            <Modal
+                open={fretFlowOpen}
+                onClose={() => handleClose('fretFlow')}
+                aria-labelledby="modal-title"
+                aria-describedby="modal-description"
+            >
+                <Card sx={{ style }} className="modal-card">
+                    <CardContent>
+                        <h3 className='font'>
+                            Fret Flow
+                        </h3>
+                        <p className='font'>
+                            <span className='skills'>Tech Stack:</span>
+                        </p>
+                        <p className='font'>React | TypeScript | PostGreSQL | MUI | Python | Django</p>
+                        <hr></hr>
+                        <p className='font'>
+                            I wanted to develop a project that combined two of my favorite hobbies, coding and playing guitar. I often found myself referencing external guitar websites when I wanted to know what a certain chord was or when I needed help working on a chord progression. I wanted to combine a lot of these seperate resources into one site and thus I came up with the idea for Fret Flow. Fret Flow is still in development.
+                        </p>
+                        <Link to={fretflow} target="_blank" rel="noopener noreferrer">
+                            <GitHubIcon className='github icons'></GitHubIcon>
+                        </Link>
+                    </CardContent>
+                </Card>
+            </Modal>
+            {/* Cyberforce Modal */}
+            <Modal
+                open={cyberforceOpen}
+                onClose={() => handleClose('cyberforce')}
+                aria-labelledby="modal-title"
+                aria-describedby="modal-description"
+            >
+                <Card sx={{ style }} className="modal-card">
+                    <CardContent>
+                        <div className="header-container">
+                            <h3 className='font'>
+                                CyberForce Competition
+                            </h3>
+                            <img src={CyberForceLogo} alt="CyberForce Logo" className="logo-image" />
+                        </div>
+                        <p className='font'>
+                            <span className='skills'>Skills Built:</span>
+                        </p>
+                        <p className='font'>Penetration Testing | Network Monitoring | Virtual Machines | Event Logging</p>
+                        <hr></hr>
+                        <p className='font p-height'>
+                            I had the privilege of working alongside classmates during the 2022 Department of Energy's CyberForce Competition. Here my team was challenged to defend a simulated energy solutions company from a "real-world" attack. The challenged required us to conduct an investigation into the company's system in order to quickly diagnose and work to resolve the problem. While our team did not win the competition, it proved to be a very fun and challenging event that sparked my interest in CTF challenges.
+                        </p>
+                        <Link to={cyberforce} target="_blank" rel="noopener noreferrer">
+                            <LinkIcon className='github icons'></LinkIcon>
+                        </Link>
+                    </CardContent>
+                </Card>
+            </Modal>
         </div>
     )
 }
