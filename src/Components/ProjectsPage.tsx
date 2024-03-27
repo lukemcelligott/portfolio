@@ -53,6 +53,8 @@ function ProjectsPage() {
     const [offerlyOpen, setOfferlyOpen] = useState(false);
     const [fretFlowOpen, setFretFlowOpen] = useState(false);
     const [cyberforceOpen, setCyberforceOpen] = useState(false);
+    const [manabuOpen, setManabuOpen] = useState(false);
+    const [snifferOpen, setSnifferOpen] = useState(false);
 
     // project links
     const portfolio = "https://github.com/lukemcelligott/portfolio";
@@ -60,7 +62,8 @@ function ProjectsPage() {
     const offerly = "https://github.com/lukemcelligott/Offerly";
     const fretflow = "https://github.com/lukemcelligott/FretFlow";
     const cyberforce = "https://cyberforce.energy.gov/cyberforce-competition/prior-competitions/doe-cyberforce-competition-2022/";
-    const manabu = "https://github.com/lukemcelligott/Manabu";
+    const manabuGithub = "https://github.com/lukemcelligott/Manabu";
+    const manabuSite = "https://manabu-six.vercel.app/";
     const sniffer = "https://github.com/lukemcelligott/packet_sniffer/tree/main";
 
     useEffect(() => {
@@ -85,6 +88,12 @@ function ProjectsPage() {
             case 'cyberforce':
                 setCyberforceOpen(true);
                 break;
+            case 'manabu':
+                setManabuOpen(true);
+                break;
+            case 'sniffer':
+                setSnifferOpen(true);
+                break;
             default:
                 break;
         }
@@ -107,6 +116,12 @@ function ProjectsPage() {
                 break;
             case 'cyberforce':
                 setCyberforceOpen(false);
+                break;
+            case 'manabu':
+                setManabuOpen(false);
+                break;
+            case 'sniffer':
+                setSnifferOpen(false);
                 break;
             default:
                 break;
@@ -213,7 +228,7 @@ function ProjectsPage() {
                     </Grid>
                     {/* Manabu */}
                     <Grid item xs={12} sm={12} md={4}>
-                        <Card raised sx={{ minWidth: 275 }} className="card">
+                        <Card raised sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('manabu')}>
                             <CardContent>
                                 <h3 className='font'>
                                     Manabu
@@ -222,10 +237,10 @@ function ProjectsPage() {
                                     I have started to learn Japanese in my spare time and I wanted to work on a project that would allow me to practice my understanding of Japanese characters. This is when I came up with the idea for Manabu (Japanese for "learn"). I built this learning platform using <span className='skills'>React</span> and <span className='skills'>TypeScript</span>. This platform allows users to brush up on their Hiragana, Katakana and Kanji by reviewing the pronunciation, taking a quiz, or playing a matching game.
                                 </p>
                                 <div style={{ display: 'flex' }}>
-                                    {/* <Link to={manabu} target="_blank" rel="noopener noreferrer">
+                                    <Link to={manabuSite} target="_blank" rel="noopener noreferrer">
                                         <LinkIcon className='github icons' style={{marginRight: '50%'}}></LinkIcon>
-                                    </Link> */}
-                                    <Link to={manabu} target="_blank" rel="noopener noreferrer">
+                                    </Link>
+                                    <Link to={manabuGithub} target="_blank" rel="noopener noreferrer">
                                         <GitHubIcon className='github icons' style={{marginLeft: '50%'}}></GitHubIcon>
                                     </Link>
                                 </div>
@@ -234,7 +249,7 @@ function ProjectsPage() {
                     </Grid>
                     {/* Packet Sniffer */}
                     <Grid item xs={12} sm={12} md={4}>
-                        <Card raised sx={{ minWidth: 275 }} className="card">
+                        <Card raised sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('sniffer')}>
                             <CardContent>
                                 <h3 className='font'>
                                     Packet Sniffer
@@ -414,6 +429,84 @@ function ProjectsPage() {
                         </p>
                         <Link to={cyberforce} target="_blank" rel="noopener noreferrer">
                             <LinkIcon className='github icons'></LinkIcon>
+                        </Link>
+                    </CardContent>
+                </Card>
+            </Modal>
+            {/* Manabu Modal */}
+            <Modal
+                open={manabuOpen}
+                onClose={() => handleClose('manabu')}
+                aria-labelledby="modal-title"
+                aria-describedby="modal-description"
+            >
+                <Card sx={{ style }} className="modal-card">
+                    <CardContent>
+                        <div className="header-container">
+                            <h3 className='font'>
+                                Manabu
+                            </h3>
+                        </div>
+                        <p className='font'>
+                            <span className='skills'>Tech Stack:</span>
+                        </p>
+                        <p className='font'>React | TypeScript | Material UI</p>
+                        <p className='font'>
+                            <span className='skills'>Deployment:</span>
+                        </p>
+                        <p className='font'>GitHub Actions | Vercel</p>
+                        <hr></hr>
+                        <p className='font'>
+                            One of my interests is watching anime and I decided it would be fun to learn Japanese in my spare time. One of the things I struggle with the most is reading/writing different Japanese characters. I thought it would be helpful to build a site that combined a lot of my favorite Japanese learning content from other sources.
+                        </p>
+                        <p className='font'>
+                            The goal of Manabu (which means "learn" in Japanese) is to provide users with an easy reference for learning Hiragana, Katakana, and Kanji characters. Each character set has three unique learning strategies. The Learn page displays characters and when clicked, it displays the pronunciation for the character, as well as examples of Japanese words that use this character.
+                        </p>
+                        <p className='font'>
+                            The Quiz page allows users to test their knowledge by automatically generating a ten question multiple choice quiz where the user has to select the correct pronunciation based on the character being displayed. This provides a metric for a user to track their progress.
+                        </p>
+                        <p className='font'>
+                            The final feature is the Practice page where twelve pairs of Japanese characters and their corresponding pronunciations are listed. Here, the user can practice quickly understanding the Japanese characters by matching them with the associated pronunciation.
+                        </p>
+                        <div style={{ display: 'flex' }}>
+                            <Link to={manabuSite} target="_blank" rel="noopener noreferrer">
+                                <LinkIcon className='github icons' style={{marginRight: '50%'}}></LinkIcon>
+                            </Link>
+                            <Link to={manabuGithub} target="_blank" rel="noopener noreferrer">
+                                <GitHubIcon className='github icons' style={{marginLeft: '50%'}}></GitHubIcon>
+                            </Link>
+                        </div>
+                    </CardContent>
+                </Card>
+            </Modal>
+            {/* Packet Sniffer Modal */}
+            <Modal
+                open={snifferOpen}
+                onClose={() => handleClose('sniffer')}
+                aria-labelledby="modal-title"
+                aria-describedby="modal-description"
+            >
+                <Card sx={{ style }} className="modal-card">
+                    <CardContent>
+                        <div className="header-container">
+                            <h3 className='font'>
+                                Packet Sniffer
+                            </h3>
+                        </div>
+                        <p className='font'>
+                            <span className='skills'>Tech Stack:</span>
+                        </p>
+                        <p className='font'>Python</p>
+                        <p className='font'>
+                            <span className='skills'>Skills Built:</span>
+                        </p>
+                        <p className='font'>Computer Networks | Web Sockets</p>
+                        <hr></hr>
+                        <p className='font'>
+                            This project was created for a cybersecurity programming course that primarily used python. A teamate and I collaborated to create a packet sniffer that could capture and analyze packets on a network. We used the socket module to capture packets and the struct module to parse the packets.
+                        </p>
+                        <Link to={sniffer} target="_blank" rel="noopener noreferrer">
+                            <GitHubIcon className='github icons'></GitHubIcon>
                         </Link>
                     </CardContent>
                 </Card>
