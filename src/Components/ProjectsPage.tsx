@@ -120,7 +120,7 @@ function ProjectsPage() {
                 <Grid container spacing={2} className='grid'>
                     {/* Portfolio Project */}
                     <Grid item xs={12} sm={12} md={4}>
-                        <Card sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('portfolio')}>
+                        <Card raised sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('portfolio')}>
                             <CardContent>
                                 <h3 className='font'>
                                     Portfolio
@@ -139,7 +139,7 @@ function ProjectsPage() {
                     </Grid>
                     {/* Scrumbs Project */}
                     <Grid item xs={12} sm={12} md={4}>
-                        <Card sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('scrumbs')}>
+                        <Card raised sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('scrumbs')}>
                             <CardContent>
                                 <h3 className='font'>
                                     Scrumbs
@@ -159,7 +159,7 @@ function ProjectsPage() {
                     </Grid>
                     {/* Offerly Project */}
                     <Grid item xs={12} sm={12} md={4}>
-                        <Card sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('offerly')}>
+                        <Card raised sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('offerly')}>
                             <CardContent>
                                 <h3 className='font'>
                                     Offerly
@@ -178,7 +178,7 @@ function ProjectsPage() {
                     </Grid>
                     {/* Fret Flow Project */}
                     <Grid item xs={12} sm={12} md={4}>
-                        <Card sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('fretFlow')}>
+                        <Card raised sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('fretFlow')}>
                             <CardContent>
                                 <h3 className='font'>
                                     Fret Flow
@@ -197,7 +197,7 @@ function ProjectsPage() {
                     </Grid>
                     {/* CyberForce Competition */}
                     <Grid item xs={12} sm={12} md={4}>
-                        <Card sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('cyberforce')}>
+                        <Card raised sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('cyberforce')}>
                             <CardContent>
                                 <h3 className='font'>
                                     CyberForce Competition
