@@ -386,7 +386,7 @@ function ProjectsPage() {
                 aria-describedby="modal-description"
             >
                 <Card sx={{ style }} className="modal-card">
-                    <CardContent>
+                    <CardContent className='modal-content'>
                         <h3 className='font'>
                             Fret Flow
                         </h3>
@@ -412,7 +412,7 @@ function ProjectsPage() {
                 aria-describedby="modal-description"
             >
                 <Card sx={{ style }} className="modal-card">
-                    <CardContent>
+                    <CardContent className='modal-content'>
                         <div className="header-container">
                             <h3 className='font'>
                                 CyberForce Competition
@@ -441,7 +441,7 @@ function ProjectsPage() {
                 aria-describedby="modal-description"
             >
                 <Card sx={{ style }} className="modal-card">
-                    <CardContent>
+                    <CardContent className='modal-content'>
                         <div className="header-container">
                             <h3 className='font'>
                                 Manabu
@@ -487,7 +487,7 @@ function ProjectsPage() {
                 aria-describedby="modal-description"
             >
                 <Card sx={{ style }} className="modal-card">
-                    <CardContent>
+                    <CardContent className='modal-content'>
                         <div className="header-container">
                             <h3 className='font'>
                                 Packet Sniffer
