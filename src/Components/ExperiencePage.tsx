@@ -64,7 +64,7 @@ function ExperiencePage() {
                                 </h3>
                                 <h5 className="job-info">
                                     <span>Slippery Rock University</span>
-                                    <span>Feb 2022 - Present</span>
+                                    <span>Feb 2022 - May 2024</span>
                                 </h5>
                                 <p>
                                     Worked on Slippery Rock University's website. Learned <span className="skills">web development</span> through our <span className="skills">CMS (Ingeniux)</span>.
@@ -103,7 +103,8 @@ function ExperiencePage() {
                 <TimelineItem>
                     <TimelineSeparator>
                         <TimelineDot className='dot-green' variant="outlined" />
-                        </TimelineSeparator>
+                        <TimelineConnector />
+                    </TimelineSeparator>
                     <TimelineContent>
                         <Card raised sx={{ minWidth: 275 }} className="card">
                             <CardContent className="font">
