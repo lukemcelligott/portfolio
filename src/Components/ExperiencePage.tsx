@@ -124,6 +124,25 @@ function ExperiencePage() {
                         </Card>
                     </TimelineContent>
                 </TimelineItem>
+                {/* UPMC */}
+                <TimelineItem>
+                    <TimelineSeparator>
+                        <TimelineDot className='dot-white' variant="outlined" />
+                        </TimelineSeparator>
+                    <TimelineContent>
+                        <Card raised sx={{ minWidth: 275 }} className="card">
+                            <CardContent className="font">
+                                <h3 className='skills'>
+                                    Systems Programmer/Analyst II
+                                </h3>
+                                <h5 className="job-info">
+                                    <span>UPMC</span>
+                                    <span>July 2024 - Present</span>
+                                </h5>                                   
+                            </CardContent>
+                        </Card>
+                    </TimelineContent>
+                </TimelineItem>
             </Timeline>
             </div>
         </div>
