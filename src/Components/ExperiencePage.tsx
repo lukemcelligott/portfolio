@@ -139,7 +139,12 @@ function ExperiencePage() {
                                 <h5 className="job-info">
                                     <span>UPMC</span>
                                     <span>July 2024 - Present</span>
-                                </h5>                                   
+                                </h5>
+                                <p>
+                                    Leveraged <span className="skills">SQL</span> to build interactive dashboards highlighting key mental/behavioral metrics for agencies and grants across the state.
+                                    Developed team productivity platforms using <span className="skills">Microsoft Access</span> and <span className="skills">Visual Basic</span>.
+                                    Lead grant-funded projects from the development stage by developing forms, designing databases, and building <span className="skills">operational intelligence</span>-focused dashboards.
+                                </p>                                   
                             </CardContent>
                         </Card>
                     </TimelineContent>
