@@ -26,75 +26,26 @@ function ExperiencePage() {
             <NavBar />
             <div>
             <Timeline position="alternate">
-                {/* Calgon Carbon Company */}
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineDot className='dot-white' variant="outlined"/>
-                        <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent>
-                        <Card raised sx={{ minWidth: 275 }} className="card">
-                                <CardContent className="font">
-                                    <h3 className='skills'>
-                                        IT Security & Compliance Intern
-                                    </h3>
-                                    <h5 className="job-info">
-                                        <span>Calgon Carbon Corporation</span>
-                                        <span>Jun 2021 - Aug 2021</span>
-                                    </h5>
-                                    <p>
-                                        Learned and implemented a <span className='skills'>SIEM (EventLog Analyzer)</span> system within the company. Actively took part in planning, rolling out, and reviewing 
-                                        <span className="skills"> phishing campaigns</span> throughout the company.
-                                    </p>                                    
-                                </CardContent>
-                            </Card>
-                    </TimelineContent>
-                </TimelineItem>
-                {/* Slippery Rock University */}
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineDot className="dot-green" variant="outlined" />
-                        <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent>
-                        <Card raised sx={{ minWidth: 275 }} className="card">
-                            <CardContent className="font">
-                                <h3 className='skills'>
-                                    Student Web Developer
-                                </h3>
-                                <h5 className="job-info">
-                                    <span>Slippery Rock University</span>
-                                    <span>Feb 2022 - May 2024</span>
-                                </h5>
-                                <p>
-                                    Worked on Slippery Rock University's website. Learned <span className="skills">web development</span> through our <span className="skills">CMS (Ingeniux)</span>.
-                                    Also developed an understanding of <span className="skills">SEO</span> and <span className="skills">ADA compliance</span> for web.
-                                </p>                                    
-                            </CardContent>
-                        </Card>
-                    </TimelineContent>
-                </TimelineItem>
-                {/* Ford Cyber */}
+                {/* UPMC */}
                 <TimelineItem>
                     <TimelineSeparator>
                         <TimelineDot className='dot-white' variant="outlined" />
-                        <TimelineConnector />
-                    </TimelineSeparator>
+                        </TimelineSeparator>
                     <TimelineContent>
                         <Card raised sx={{ minWidth: 275 }} className="card">
                             <CardContent className="font">
                                 <h3 className='skills'>
-                                    Cybersecurity Red Team Intern
+                                    Systems Programmer/Analyst II
                                 </h3>
                                 <h5 className="job-info">
-                                    <span>Ford Motor Company</span>
-                                    <span>May 2022 - Aug 2022</span>
+                                    <span>UPMC</span>
+                                    <span>July 2024 - Present</span>
                                 </h5>
                                 <p>
-                                    Researched and implemented <span className="skills">honeypot systems</span> throughout the company's network. Utilized numerous <span className="skills">Canary security </span>
-                                    mechanisms that would be used by the red team in the future. Collaborated with experienced engineers to perform <span className="skills">penetration tests</span>. Competed in and won a 
-                                    <span className="skills"> CTF</span> competition among all other cybersecurity interns at the company.
-                                </p>                                    
+                                    Leveraged <span className="skills">SQL</span> to build interactive dashboards highlighting key mental/behavioral metrics for agencies and grants across the state.
+                                    Developed team productivity platforms using <span className="skills">Microsoft Access</span> and <span className="skills">Visual Basic</span>.
+                                    Lead grant-funded projects from the development stage by developing forms, designing databases, and building <span className="skills">operational intelligence</span>-focused dashboards.
+                                </p>                                   
                             </CardContent>
                         </Card>
                     </TimelineContent>
@@ -125,28 +76,77 @@ function ExperiencePage() {
                         </Card>
                     </TimelineContent>
                 </TimelineItem>
-                {/* UPMC */}
+                {/* Ford Cyber */}
                 <TimelineItem>
                     <TimelineSeparator>
                         <TimelineDot className='dot-white' variant="outlined" />
-                        </TimelineSeparator>
+                        <TimelineConnector />
+                    </TimelineSeparator>
                     <TimelineContent>
                         <Card raised sx={{ minWidth: 275 }} className="card">
                             <CardContent className="font">
                                 <h3 className='skills'>
-                                    Systems Programmer/Analyst II
+                                    Cybersecurity Red Team Intern
                                 </h3>
                                 <h5 className="job-info">
-                                    <span>UPMC</span>
-                                    <span>July 2024 - Present</span>
+                                    <span>Ford Motor Company</span>
+                                    <span>May 2022 - Aug 2022</span>
                                 </h5>
                                 <p>
-                                    Leveraged <span className="skills">SQL</span> to build interactive dashboards highlighting key mental/behavioral metrics for agencies and grants across the state.
-                                    Developed team productivity platforms using <span className="skills">Microsoft Access</span> and <span className="skills">Visual Basic</span>.
-                                    Lead grant-funded projects from the development stage by developing forms, designing databases, and building <span className="skills">operational intelligence</span>-focused dashboards.
-                                </p>                                   
+                                    Researched and implemented <span className="skills">honeypot systems</span> throughout the company's network. Utilized numerous <span className="skills">Canary security </span>
+                                    mechanisms that would be used by the red team in the future. Collaborated with experienced engineers to perform <span className="skills">penetration tests</span>. Competed in and won a 
+                                    <span className="skills"> CTF</span> competition among all other cybersecurity interns at the company.
+                                </p>                                    
                             </CardContent>
                         </Card>
+                    </TimelineContent>
+                </TimelineItem>
+                {/* Slippery Rock University */}
+                <TimelineItem>
+                    <TimelineSeparator>
+                        <TimelineDot className="dot-green" variant="outlined" />
+                        <TimelineConnector />
+                    </TimelineSeparator>
+                    <TimelineContent>
+                        <Card raised sx={{ minWidth: 275 }} className="card">
+                            <CardContent className="font">
+                                <h3 className='skills'>
+                                    Student Web Developer
+                                </h3>
+                                <h5 className="job-info">
+                                    <span>Slippery Rock University</span>
+                                    <span>Feb 2022 - May 2024</span>
+                                </h5>
+                                <p>
+                                    Worked on Slippery Rock University's website. Learned <span className="skills">web development</span> through our <span className="skills">CMS (Ingeniux)</span>.
+                                    Also developed an understanding of <span className="skills">SEO</span> and <span className="skills">ADA compliance</span> for web.
+                                </p>                                    
+                            </CardContent>
+                        </Card>
+                    </TimelineContent>
+                </TimelineItem>
+                {/* Calgon Carbon Company */}
+                <TimelineItem>
+                    <TimelineSeparator>
+                        <TimelineDot className='dot-white' variant="outlined"/>
+                        <TimelineConnector />
+                    </TimelineSeparator>
+                    <TimelineContent>
+                        <Card raised sx={{ minWidth: 275 }} className="card">
+                                <CardContent className="font">
+                                    <h3 className='skills'>
+                                        IT Security & Compliance Intern
+                                    </h3>
+                                    <h5 className="job-info">
+                                        <span>Calgon Carbon Corporation</span>
+                                        <span>Jun 2021 - Aug 2021</span>
+                                    </h5>
+                                    <p>
+                                        Learned and implemented a <span className='skills'>SIEM (EventLog Analyzer)</span> system within the company. Actively took part in planning, rolling out, and reviewing 
+                                        <span className="skills"> phishing campaigns</span> throughout the company.
+                                    </p>                                    
+                                </CardContent>
+                            </Card>
                     </TimelineContent>
                 </TimelineItem>
             </Timeline>
