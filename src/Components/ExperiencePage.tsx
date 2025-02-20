@@ -31,6 +31,7 @@ function ExperiencePage() {
                     <TimelineSeparator>
                         <TimelineDot className='dot-white' variant="outlined" />
                         </TimelineSeparator>
+                        <TimelineConnector />
                     <TimelineContent>
                         <Card raised sx={{ minWidth: 275 }} className="card">
                             <CardContent className="font">
@@ -129,7 +130,6 @@ function ExperiencePage() {
                 <TimelineItem>
                     <TimelineSeparator>
                         <TimelineDot className='dot-white' variant="outlined"/>
-                        <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent>
                         <Card raised sx={{ minWidth: 275 }} className="card">
