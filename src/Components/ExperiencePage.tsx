@@ -1,7 +1,6 @@
 /* Display technical experience */
 
 import React, { useEffect } from 'react';
-import logo from './logo.svg';
 
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';

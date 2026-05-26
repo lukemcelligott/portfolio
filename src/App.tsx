@@ -1,5 +1,3 @@
-import React from 'react';
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import './App.css';
 import HomePage from './Components/HomePage';

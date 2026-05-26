@@ -1,7 +1,7 @@
 /* Show welcome information when user visits site */
 
 import React from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './../App.css';
 import './styles/HomePage.css';
 import NavBar from './NavBar';
