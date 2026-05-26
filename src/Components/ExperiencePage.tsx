@@ -26,6 +26,29 @@ function ExperiencePage() {
             <NavBar />
             <div>
             <Timeline position="alternate">
+                {/* ZOLL */}
+                <TimelineItem>
+                    <TimelineSeparator>
+                        <TimelineDot className='dot-green' variant="outlined" />
+                        <TimelineConnector />
+                    </TimelineSeparator>
+                    <TimelineContent>
+                        <Card raised sx={{ minWidth: 275 }} className="card">
+                            <CardContent className="font">
+                                <h3 className='skills'>
+                                    Web Applications Engineer II
+                                </h3>
+                                <h5 className="job-info">
+                                    <span>ZOLL</span>
+                                    <span>December 2025 - Present</span>
+                                </h5>
+                                <p>
+                                    Managing <span className="skills">Backstage</span>, an open source IDP.
+                                </p>                                   
+                            </CardContent>
+                        </Card>
+                    </TimelineContent>
+                </TimelineItem>
                 {/* UPMC */}
                 <TimelineItem>
                     <TimelineSeparator>
@@ -40,7 +63,7 @@ function ExperiencePage() {
                                 </h3>
                                 <h5 className="job-info">
                                     <span>UPMC</span>
-                                    <span>July 2024 - Present</span>
+                                    <span>July 2024 - November 2025</span>
                                 </h5>
                                 <p>
                                     Leveraged <span className="skills">SQL</span> to build interactive dashboards highlighting key mental/behavioral metrics for agencies and grants across the state.
