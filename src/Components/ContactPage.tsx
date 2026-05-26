@@ -1,7 +1,6 @@
 /* Show contact information */
 
 import React, { useEffect } from 'react';
-import logo from './logo.svg';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';

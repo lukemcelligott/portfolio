@@ -191,25 +191,6 @@ function ProjectsPage() {
                             </CardContent>
                         </Card>
                     </Grid>
-                    {/* Fret Flow Project */}
-                    <Grid item xs={12} sm={12} md={4}>
-                        <Card raised sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('fretFlow')}>
-                            <CardContent>
-                                <h3 className='font'>
-                                    Fret Flow
-                                </h3>
-                                <p className='font p-height'>
-                                    As a hobbyist guitar player, I wanted to develop a website that contained a lot of the different tools I found myself using while playing. This includes a 
-                                    chord identifier, chord progression generator, scale practice tool, and more. This project was developed using <span className="skills">React</span> and 
-                                    <span className="skills"> Typescript</span>. I also implemented <span className="skills">PostgreSQL</span> for database management and <span className="skills">Django </span>
-                                    for my custom <span className="skills">RESTful API</span>.
-                                </p>
-                                <Link to={fretflow} target="_blank" rel="noopener noreferrer">
-                                    <GitHubIcon className='github icons'></GitHubIcon>
-                                </Link>
-                            </CardContent>
-                        </Card>
-                    </Grid>
                     {/* CyberForce Competition */}
                     <Grid item xs={12} sm={12} md={4}>
                         <Card raised sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('cyberforce')}>
@@ -223,27 +204,6 @@ function ProjectsPage() {
                                 <Link to={cyberforce} target="_blank" rel="noopener noreferrer">
                                     <LinkIcon className='github icons'></LinkIcon>
                                 </Link>
-                            </CardContent>
-                        </Card>
-                    </Grid>
-                    {/* Manabu */}
-                    <Grid item xs={12} sm={12} md={4}>
-                        <Card raised sx={{ minWidth: 275 }} className="card" onClick={() => handleOpen('manabu')}>
-                            <CardContent>
-                                <h3 className='font'>
-                                    Manabu
-                                </h3>
-                                <p className='font p-height'>
-                                    I have started to learn Japanese in my spare time and I wanted to work on a project that would allow me to practice my understanding of Japanese characters. This is when I came up with the idea for Manabu (Japanese for "learn"). I built this learning platform using <span className='skills'>React</span> and <span className='skills'>TypeScript</span>. This platform allows users to brush up on their Hiragana, Katakana and Kanji by reviewing the pronunciation, taking a quiz, or playing a matching game.
-                                </p>
-                                <div style={{ display: 'flex' }}>
-                                    <Link to={manabuSite} target="_blank" rel="noopener noreferrer">
-                                        <LinkIcon className='github icons' style={{marginRight: '50%'}}></LinkIcon>
-                                    </Link>
-                                    <Link to={manabuGithub} target="_blank" rel="noopener noreferrer">
-                                        <GitHubIcon className='github icons' style={{marginLeft: '50%'}}></GitHubIcon>
-                                    </Link>
-                                </div>
                             </CardContent>
                         </Card>
                     </Grid>

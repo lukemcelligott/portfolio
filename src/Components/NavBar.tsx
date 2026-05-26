@@ -1,7 +1,6 @@
 /* Displays the navigation bar at the top of the site */
 
-import React, { useState } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './../App.css';
 
 import AppBar from '@mui/material/AppBar';

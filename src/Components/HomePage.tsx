@@ -1,7 +1,7 @@
 /* Show welcome information when user visits site */
 
 import React from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './../App.css';
 import './styles/HomePage.css';
 import NavBar from './NavBar';
@@ -20,7 +20,7 @@ function HomePage() {
                     <h2 className='accent'>Luke McElligott</h2>
                 </div>
                 
-                <p className='rows'>systems programmer | software developer | tech hobbyist</p>
+                <p className='rows'>software engineer | tech hobbyist</p>
             </div>
         </div>
     )
